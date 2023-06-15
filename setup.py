@@ -6,7 +6,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = '0.0.4'
+version = '4.0.0'
 
 if sys.argv[-1] == 'publish':
     try:
@@ -32,22 +32,21 @@ setup(
     version=version,
     description="""Google Cloud Tasks integration for Django""",
     long_description=readme,
-    author='GeorgeLubaretsi',
-    url='https://github.com/GeorgeLubaretsi/django-cloud-tasks',
+    author='Victor NH',
+    url='https://github.com/ngabovictor/django-cloud-tasks',
     packages=[
         'django_cloud_tasks',
     ],
     include_package_data=True,
     install_requires=[
-        'google-api-python-client>=1.6.4',
+        'google-api-python-client>=2.89.0',
     ],
     license="MIT",
     zip_safe=False,
     keywords='django cloudtasks cloud tasks',
     classifiers=[
         'Framework :: Django',
-        'Framework :: Django :: 1.11',
-        'Framework :: Django :: 2.0',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
@@ -55,5 +54,6 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.9',
     ],
 )
