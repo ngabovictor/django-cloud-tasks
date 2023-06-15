@@ -13,7 +13,7 @@ to your instances yourself.
 Prerequisites
 =============
 
-- Django 1.8+
+- Django 4.0+
 - Python 3.4, 3.5, 3.6
 
 Dependencies
